@@ -21,7 +21,7 @@ namespace ExemploExplorando.Models
         private int _idade;
         public string Nome 
         {
-            get => _nome?.ToUpper();
+            get => _nome.ToUpper();
             set
             {
                 if(value == "")
@@ -35,7 +35,7 @@ namespace ExemploExplorando.Models
             
         }
 
-        public string SobreNome { get; set; }
+        public string SobreNome{ get; set; }
         public string NomeCompleto => $"{Nome} {SobreNome}";
 
         public int Idade 
